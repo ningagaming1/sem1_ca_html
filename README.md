@@ -67,7 +67,7 @@ Titans-Gym-Management/
  Author
 
 **Ekamjot kaur**
-**Vibhuti**
+**Vibhuti Mehra**
 **Samarpreet Singh**
 
 
