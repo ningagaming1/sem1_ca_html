@@ -41,7 +41,10 @@ header h2 {
 }
 
 .sidebar a:hover {
-    background: #247bdb;
+    background: #22375a; /* Slightly lighter navy than sidebar */
+    color: #ffffff;
+    border-left: 4px solid #f47721;
+    border-radius: 5px;
 }
 
 .content {
