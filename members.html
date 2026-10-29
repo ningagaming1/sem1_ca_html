@@ -1,32 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Member Management - Titan's Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional helper layouts for this page's elements */
+        .filter-bar {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 25px;
+        }
+        .filter-bar input[type="search"] {
+            flex: 2;
+            margin: 0;
+        }
+        .filter-bar select {
+            flex: 1;
+            margin: 0;
+        }
+        .form-card {
+            background: white;
+            border: 1px solid #dce2eb;
+            border-radius: 8px;
+            padding: 25px;
+            max-width: 600px;
+            margin-top: 15px;
+        }
+        .form-card button {
+            margin-top: 10px;
+        }
+    </style>
+</head>
+<body>
 
-<h1>Member Management</h1>
+    <aside class="sidebar">
+        <div>
+            <h2>TITAN'S FITNESS</h2>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="members.html" style="background-color: #f47721; border-radius: 5px;">Member Management</a>
+            <a href="schedules.html">Schedules & Plans</a>
+            <a href="progress.html">Progress & History</a>
+        </div>
+        <a href="login.html" style="margin-top: auto;">Logout</a>
+    </aside>
 
-<input type="search"
-       placeholder="Search members...">
+    <main class="content">
+        <h1>Member Management</h1>
 
-<select>
-    <option>All Statuses</option>
-    <option>Active</option>
-    <option>Expired</option>
-    <option>Pending</option>
-</select>
+        <!-- Search and Filter Bar -->
+        <div class="filter-bar">
+            <input type="search" placeholder="Search members...">
+            <select>
+                <option value="">All Statuses</option>
+                <option value="active">Active</option>
+                <option value="expired">Expired</option>
+                <option value="pending">Pending</option>
+            </select>
+        </div>
 
-<h2>Add New Member</h2>
+        <!-- Add Member Form Card -->
+        <div class="form-card">
+            <h2>Add New Member</h2>
+            <form action="members.html" method="POST">
+                <label for="name">Full Name</label>
+                <input type="text" id="name" name="name" placeholder="Abhishek sharma" required>
 
-<form action="members.html">
-    <label for="name">Full Name</label>
-    <input type="text" id="name" required>
+                <label for="phone">Phone Number</label>
+                <input type="tel" id="phone" name="phone" placeholder="+1 (555) 000-0000" required>
 
-    <label for="phone">Phone Number</label>
-    <input type="tel" id="phone" required>
+                <label for="plan">Membership Plan</label>
+                <select id="plan" name="plan" required>
+                    <option value="">Select Plan</option>
+                    <option value="monthly">Monthly</option>
+                    <option value="quarterly">Quarterly</option>
+                    <option value="annual">Annual</option>
+                </select>
 
-    <label for="plan">Membership Plan</label>
-    <select id="plan" required>
-        <option value="">Select Plan</option>
-        <option>Monthly</option>
-        <option>Quarterly</option>
-        <option>Annual</option>
-    </select>
+                <button type="submit">Add Member</button>
+            </form>
+        </div>
+    </main>
 
-    <button type="submit">Add Member</button>
-</form>
+</body>
+</html>

@@ -1,52 +1,107 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard - Titan's Fitness</title>
+    <link rel="stylesheet" href="style.css">
+    <style>
+        /* Additional helper classes for dashboard layout & badges */
+        .badge {
+            display: inline-block;
+            padding: 4px 10px;
+            border-radius: 12px;
+            font-size: 13px;
+            font-weight: bold;
+        }
+        .badge-active {
+            background-color: #dcfce7;
+            color: #15803d;
+        }
+        .badge-pending {
+            background-color: #fef3c7;
+            color: #b45309;
+        }
+        .badge-expired {
+            background-color: #fee2e2;
+            color: #b91c1c;
+        }
+        .section-header {
+            margin-top: 35px;
+            margin-bottom: 15px;
+        }
+    </style>
+</head>
+<body>
 
-<main class="content">
-    <h1>Admin Dashboard</h1>
-    <p>Welcome to Titan's Fitness Center.</p>
+    <aside class="sidebar">
+        <div>
+            <h2>TITAN'S FITNESS</h2>
+            <a href="dashboard.html" style="background-color: #f47721; border-radius: 5px;">Dashboard</a>
+            <a href="members.html">Member Management</a>
+            <a href="schedules.html">Schedules & Plans</a>
+            <a href="progress.html">Progress & History</a>
+        </div>
+        <a href="login.html">Logout</a>
+    </aside>
 
-    <div class="card-container">
-        <div class="card">
-            <h3>Total Members</h3>
-            <p class="number">248</p>
+    <main class="content">
+        <h1>Admin Dashboard</h1>
+        <p>Welcome to Titan's Fitness Center.</p>
+
+        <!-- Key Metrics Cards -->
+        <div class="card-container">
+            <div class="card">
+                <h3>Total Members</h3>
+                <p class="number">248</p>
+            </div>
+
+            <div class="card">
+                <h3>Active Memberships</h3>
+                <p class="number">186</p>
+            </div>
+
+            <div class="card">
+                <h3>Today's Attendance</h3>
+                <p class="number">72</p>
+            </div>
+
+            <div class="card">
+                <h3>Upcoming Sessions</h3>
+                <p class="number">8</p>
+            </div>
         </div>
 
-        <div class="card">
-            <h3>Active Memberships</h3>
-            <p class="number">186</p>
-        </div>
+        <h2 class="section-header">Recent Member Activity</h2>
 
-        <div class="card">
-            <h3>Today's Attendance</h3>
-            <p class="number">72</p>
-        </div>
+        <!-- Activity Table -->
+        <table>
+            <thead>
+                <tr>
+                    <th>Member Name</th>
+                    <th>Membership</th>
+                    <th>Status</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr>
+                    <td>Rahul Sharma</td>
+                    <td>Annual</td>
+                    <td><span class="badge badge-active">Active</span></td>
+                </tr>
+                <tr>
+                    <td>Priya Singh</td>
+                    <td>Quarterly</td>
+                    <td><span class="badge badge-active">Active</span></td>
+                </tr>
+                <tr>
+                    <td>Aman Verma</td>
+                    <td>Monthly</td>
+                    <td><span class="badge badge-pending">Pending</span></td>
+                </tr>
+            </tbody>
+        </table>
+    </main>
 
-        <div class="card">
-            <h3>Upcoming Sessions</h3>
-            <p class="number">8</p>
-        </div>
-    </div>
-
-    <h2>Recent Member Activity</h2>
-
-    <table>
-        <tr>
-            <th>Member Name</th>
-            <th>Membership</th>
-            <th>Status</th>
-        </tr>
-        <tr>
-            <td>Rahul Sharma</td>
-            <td>Annual</td>
-            <td>Active</td>
-        </tr>
-        <tr>
-            <td>Priya Singh</td>
-            <td>Quarterly</td>
-            <td>Active</td>
-        </tr>
-        <tr>
-            <td>Aman Verma</td>
-            <td>Monthly</td>
-            <td>Pending</td>
-        </tr>
-    </table>
-</main>
+</body>
+</html>
