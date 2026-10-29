@@ -1,0 +1,32 @@
+
+<h1>Member Management</h1>
+
+<input type="search"
+       placeholder="Search members...">
+
+<select>
+    <option>All Statuses</option>
+    <option>Active</option>
+    <option>Expired</option>
+    <option>Pending</option>
+</select>
+
+<h2>Add New Member</h2>
+
+<form action="members.html">
+    <label for="name">Full Name</label>
+    <input type="text" id="name" required>
+
+    <label for="phone">Phone Number</label>
+    <input type="tel" id="phone" required>
+
+    <label for="plan">Membership Plan</label>
+    <select id="plan" required>
+        <option value="">Select Plan</option>
+        <option>Monthly</option>
+        <option>Quarterly</option>
+        <option>Annual</option>
+    </select>
+
+    <button type="submit">Add Member</button>
+</form>

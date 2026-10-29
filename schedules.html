@@ -1,0 +1,205 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Schedules & Plans | Titan's Fitness</title>
+
+    <!-- Connect the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>TITAN'S FITNESS</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="members.html">Member Management</a>
+        <a href="schedules.html">Schedules & Plans</a>
+        <a href="progress.html">Progress & History</a>
+        <a href="login.html">Logout</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <h1>Schedules & Membership Plans</h1>
+
+        <p>
+            Manage workout schedules, training sessions,
+            trainers and gym membership plans.
+        </p>
+
+        <!-- Weekly Workout Schedule -->
+        <section>
+            <h2>Weekly Workout Schedule</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Day</th>
+                        <th>Time</th>
+                        <th>Workout Session</th>
+                        <th>Trainer</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Monday</td>
+                        <td>7:00 AM</td>
+                        <td>Cardio Training</td>
+                        <td>Trainer A</td>
+                        <td>Scheduled</td>
+                    </tr>
+
+                    <tr>
+                        <td>Tuesday</td>
+                        <td>6:00 PM</td>
+                        <td>Strength Training</td>
+                        <td>Trainer B</td>
+                        <td>Scheduled</td>
+                    </tr>
+
+                    <tr>
+                        <td>Wednesday</td>
+                        <td>7:00 AM</td>
+                        <td>Yoga & Flexibility</td>
+                        <td>Trainer C</td>
+                        <td>Scheduled</td>
+                    </tr>
+
+                    <tr>
+                        <td>Thursday</td>
+                        <td>6:00 PM</td>
+                        <td>Weight Training</td>
+                        <td>Trainer B</td>
+                        <td>Scheduled</td>
+                    </tr>
+
+                    <tr>
+                        <td>Friday</td>
+                        <td>7:00 AM</td>
+                        <td>Cardio Training</td>
+                        <td>Trainer A</td>
+                        <td>Scheduled</td>
+                    </tr>
+
+                    <tr>
+                        <td>Saturday</td>
+                        <td>9:00 AM</td>
+                        <td>Group Workout</td>
+                        <td>Trainer C</td>
+                        <td>Scheduled</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Create New Schedule -->
+        <section>
+            <h2>Create New Schedule</h2>
+
+            <form action="schedules.html" method="get">
+
+                <label for="session">Workout Session Name</label>
+                <input
+                    type="text"
+                    id="session"
+                    name="session"
+                    placeholder="Enter session name"
+                    required
+                >
+
+                <label for="day">Select Day</label>
+                <select id="day" name="day" required>
+                    <option value="">Choose a day</option>
+                    <option>Monday</option>
+                    <option>Tuesday</option>
+                    <option>Wednesday</option>
+                    <option>Thursday</option>
+                    <option>Friday</option>
+                    <option>Saturday</option>
+                    <option>Sunday</option>
+                </select>
+
+                <label for="time">Session Time</label>
+                <input
+                    type="time"
+                    id="time"
+                    name="time"
+                    required
+                >
+
+                <label for="trainer">Assign Trainer</label>
+                <select id="trainer" name="trainer" required>
+                    <option value="">Choose a trainer</option>
+                    <option>Trainer A</option>
+                    <option>Trainer B</option>
+                    <option>Trainer C</option>
+                </select>
+
+                <button type="submit">Create Schedule</button>
+
+            </form>
+        </section>
+
+        <!-- Membership Plans -->
+        <section>
+            <h2>Membership Plans</h2>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>Monthly Plan</h3>
+                    <p class="number">₹1,500</p>
+                    <p>Duration: 1 Month</p>
+                    <ul>
+                        <li>Gym equipment access</li>
+                        <li>Basic workout guidance</li>
+                        <li>Fitness area access</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Quarterly Plan</h3>
+                    <p class="number">₹4,000</p>
+                    <p>Duration: 3 Months</p>
+                    <ul>
+                        <li>Gym equipment access</li>
+                        <li>Fitness assessment</li>
+                        <li>Selected group sessions</li>
+                    </ul>
+                </div>
+
+                <div class="card">
+                    <h3>Annual Plan</h3>
+                    <p class="number">₹12,000</p>
+                    <p>Duration: 12 Months</p>
+                    <ul>
+                        <li>Gym equipment access</li>
+                        <li>Fitness assessment</li>
+                        <li>Selected group sessions</li>
+                    </ul>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                &copy; 2026 Titan's Fitness Center.
+                All rights reserved.
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>

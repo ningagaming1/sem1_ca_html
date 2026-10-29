@@ -1,0 +1,189 @@
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background: #f4f6fa;
+    color: #172033;
+}
+
+header {
+    background: #101b32;
+    color: white;
+    padding: 18px 25px;
+}
+
+header h2 {
+    margin: 0;
+}
+
+.sidebar {
+    background: #172844;
+    width: 230px;
+    min-height: 100vh;
+    padding: 20px;
+    float: left;
+}
+
+.sidebar h2 {
+    color: #f47721;
+}
+
+.sidebar a {
+    display: block;
+    color: white;
+    text-decoration: none;
+    padding: 13px 8px;
+    margin: 5px 0;
+}
+
+.sidebar a:hover {
+    background: #247bdb;
+}
+
+.content {
+    padding: 25px;
+    overflow: hidden;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin: 20px 0;
+}
+
+.card {
+    background: white;
+    border: 1px solid #dce2eb;
+    border-radius: 8px;
+    padding: 20px;
+    flex: 1 1 180px;
+}
+
+.card h3 {
+    font-size: 16px;
+}
+
+.number {
+    font-size: 28px;
+    font-weight: bold;
+    color: #247bdb;
+}
+
+table {
+    width: 100%;
+    border-collapse: collapse;
+    background: white;
+    margin-top: 20px;
+}
+
+th, td {
+    padding: 12px;
+    border: 1px solid #dce2eb;
+    text-align: left;
+}
+
+th {
+    background: #172844;
+    color: white;
+}
+
+input, select, textarea {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0 16px;
+    border: 1px solid #cbd5e1;
+    border-radius: 5px;
+}
+
+button {
+    background: #f47721;
+    color: white;
+    padding: 11px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #d95e0b;
+}
+
+.login-page {
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
+}
+
+.login-box {
+    width: 100%;
+    max-width: 400px;
+    background: white;
+    padding: 30px;
+    border-radius: 10px;
+}
+
+.login-box h1 {
+    color: #f47721;
+    font-size: 25px;
+}
+
+@media (max-width: 600px) {
+    .sidebar {
+        float: none;
+        width: 100%;
+        min-height: auto;
+    }
+
+    .content {
+        padding: 15px;
+    }
+
+    table {
+        font-size: 12px;
+    }
+
+    th, td {
+        padding: 7px;
+    }
+}
+
+.progress-track {
+    width: 100%;
+    height: 18px;
+    background-color: #dce2eb;
+    border-radius: 10px;
+    overflow: hidden;
+    margin-bottom: 20px;
+}
+
+.progress-fill {
+    height: 100%;
+    background-color: #247bdb;
+    border-radius: 10px;
+}
+
+.workout {
+    width: 80%;
+}
+
+.attendance {
+    width: 85%;
+}
+
+.fitness {
+    width: 70%;
+}
+
+footer {
+    text-align: center;
+    padding: 20px;
+    color: #64748b;
+}

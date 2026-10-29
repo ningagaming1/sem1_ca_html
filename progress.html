@@ -1,0 +1,242 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Progress & History | Titan's Fitness</title>
+
+    <!-- Connect the CSS file -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- Sidebar Navigation -->
+    <aside class="sidebar">
+        <h2>TITAN'S FITNESS</h2>
+
+        <a href="dashboard.html">Dashboard</a>
+        <a href="members.html">Member Management</a>
+        <a href="schedules.html">Schedules & Plans</a>
+        <a href="progress.html">Progress & History</a>
+        <a href="login.html">Logout</a>
+    </aside>
+
+    <!-- Main Content -->
+    <main class="content">
+
+        <h1>Progress & History</h1>
+
+        <p>
+            View member attendance, workout activity,
+            fitness progress and membership history.
+        </p>
+
+        <!-- Member Selection -->
+        <section>
+            <h2>Member Progress Overview</h2>
+
+            <form action="progress.html" method="get">
+
+                <label for="member">Select Member</label>
+
+                <select id="member" name="member">
+                    <option>Rahul Sharma</option>
+                    <option>Priya Singh</option>
+                    <option>Aman Verma</option>
+                </select>
+
+                <button type="submit">View Progress</button>
+
+            </form>
+        </section>
+
+        <!-- Progress Summary Cards -->
+        <section>
+            <h2>Fitness Summary</h2>
+
+            <div class="card-container">
+
+                <div class="card">
+                    <h3>Attendance</h3>
+                    <p class="number">85%</p>
+                    <p>Sample attendance rate</p>
+                </div>
+
+                <div class="card">
+                    <h3>Workouts Completed</h3>
+                    <p class="number">24</p>
+                    <p>This month</p>
+                </div>
+
+                <div class="card">
+                    <h3>Fitness Goal</h3>
+                    <p class="number">70%</p>
+                    <p>Sample goal completion</p>
+                </div>
+
+            </div>
+        </section>
+
+        <!-- Visual Fitness Progress -->
+        <section>
+            <h2>Fitness Goal Progress</h2>
+
+            <h3>Workout Consistency</h3>
+            <div class="progress-track">
+                <div class="progress-fill workout"></div>
+            </div>
+
+            <h3>Attendance Target</h3>
+            <div class="progress-track">
+                <div class="progress-fill attendance"></div>
+            </div>
+
+            <h3>Monthly Fitness Goal</h3>
+            <div class="progress-track">
+                <div class="progress-fill fitness"></div>
+            </div>
+        </section>
+
+        <!-- Attendance History -->
+        <section>
+            <h2>Attendance History</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Member Name</th>
+                        <th>Check-in Time</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>27 Oct 2026</td>
+                        <td>Rahul Sharma</td>
+                        <td>07:05 AM</td>
+                        <td>Present</td>
+                    </tr>
+
+                    <tr>
+                        <td>27 Oct 2026</td>
+                        <td>Priya Singh</td>
+                        <td>08:10 AM</td>
+                        <td>Present</td>
+                    </tr>
+
+                    <tr>
+                        <td>27 Oct 2026</td>
+                        <td>Aman Verma</td>
+                        <td>--</td>
+                        <td>Absent</td>
+                    </tr>
+
+                    <tr>
+                        <td>26 Oct 2026</td>
+                        <td>Rahul Sharma</td>
+                        <td>06:55 AM</td>
+                        <td>Present</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Workout History -->
+        <section>
+            <h2>Workout History</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Date</th>
+                        <th>Workout Type</th>
+                        <th>Duration</th>
+                        <th>Completion</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>27 Oct 2026</td>
+                        <td>Cardio Training</td>
+                        <td>30 minutes</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>26 Oct 2026</td>
+                        <td>Strength Training</td>
+                        <td>45 minutes</td>
+                        <td>Completed</td>
+                    </tr>
+
+                    <tr>
+                        <td>24 Oct 2026</td>
+                        <td>Flexibility Training</td>
+                        <td>25 minutes</td>
+                        <td>Completed</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Membership History -->
+        <section>
+            <h2>Membership History</h2>
+
+            <table>
+                <thead>
+                    <tr>
+                        <th>Member Name</th>
+                        <th>Membership Plan</th>
+                        <th>Start Date</th>
+                        <th>Expiry Date</th>
+                        <th>Status</th>
+                    </tr>
+                </thead>
+
+                <tbody>
+                    <tr>
+                        <td>Rahul Sharma</td>
+                        <td>Annual</td>
+                        <td>01 Jan 2026</td>
+                        <td>31 Dec 2026</td>
+                        <td>Active</td>
+                    </tr>
+
+                    <tr>
+                        <td>Priya Singh</td>
+                        <td>Quarterly</td>
+                        <td>01 Aug 2026</td>
+                        <td>31 Oct 2026</td>
+                        <td>Expiring</td>
+                    </tr>
+
+                    <tr>
+                        <td>Aman Verma</td>
+                        <td>Monthly</td>
+                        <td>01 Sep 2026</td>
+                        <td>30 Sep 2026</td>
+                        <td>Expired</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+
+        <!-- Footer -->
+        <footer>
+            <p>
+                &copy; 2026 Titan's Fitness Center.
+                All rights reserved.
+            </p>
+        </footer>
+
+    </main>
+
+</body>
+</html>
