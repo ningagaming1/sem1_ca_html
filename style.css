@@ -41,9 +41,16 @@ header h2 {
 }
 
 .sidebar a:hover {
-    background: #22375a; /* Slightly lighter navy than sidebar */
+    background: #22375a; /* Slightly lighter navy */
     color: #ffffff;
     border-left: 4px solid #f47721;
+    border-radius: 5px;
+}
+
+.sidebar a.logout:hover {
+    background: #22375a; /* Slightly lighter navy */
+    color: #ffffff;
+    border-left: 4px solid red;
     border-radius: 5px;
 }
 
@@ -69,6 +76,10 @@ header h2 {
 
 .card h3 {
     font-size: 16px;
+}
+
+.card :hover{
+    transform: translateY(10);
 }
 
 .number {
