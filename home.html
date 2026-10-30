@@ -1,0 +1,177 @@
+!DOCTYPE html>
+<html>
+<head>
+    <title>Titan's Fitness Center</title>
+
+    <style>
+        body {
+            font-family: Arial;
+            margin: 0;
+            background-color: #f4f4f4;
+        }
+
+        header {
+            background-color: #101d35;
+            color: white;
+            padding: 15px;
+            text-align: center;
+        }
+
+        header h2 {
+            color: orange;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin: 10px;
+        }
+
+        section {
+            padding: 30px;
+            text-align: center;
+        }
+
+        .container {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 20px;
+        }
+
+        .card {
+            background-color: white;
+            padding: 20px;
+            width: 220px;
+            border-radius: 8px;
+        }
+
+        .card h3 {
+            color: #e87920;
+        }
+
+        .button {
+            background-color: orange;
+            color: white;
+            padding: 10px 20px;
+            text-decoration: none;
+        }
+
+        img, video {
+            max-width: 100%;
+        }
+
+        footer {
+            background-color: #101d35;
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+    </style>
+</head>
+
+<body>
+
+    <header>
+        <h2>TITAN'S FITNESS CENTER</h2>
+        <nav>
+            <a href="home.html">Home</a>
+            <a href="login.html">Login</a>
+            <a href="dashboard.html">Dashboard</a>
+            <a href="members.html">Members</a>
+            <a href="schedules.html">Schedules</a>
+            <a href="progress.html">Progress</a>
+        </nav>
+    </header>
+
+    <section>
+        <h1>Welcome to Titan's Fitness Center</h1>
+        <p>Train harder, stay fit and achieve your fitness goals.</p>
+        <a href="login.html" class="button">Get Started</a>
+    </section>
+
+    <section>
+        <h2>About Us</h2>
+        <p>We provide quality gym equipment, workout plans and professional fitness guidance.</p>
+    </section>
+
+    <section>
+        <h2>Our Facilities</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Strength Training</h3>
+                <p>Build strength with modern gym equipment.</p>
+            </div>
+
+            <div class="card">
+                <h3>Cardio Training</h3>
+                <p>Improve stamina and overall fitness.</p>
+            </div>
+
+            <div class="card">
+                <h3>Personal Training</h3>
+                <p>Get guidance from experienced trainers.</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Membership Plans</h2>
+        <div class="container">
+            <div class="card">
+                <h3>Monthly Plan</h3>
+                <p>₹1,500</p>
+                <p>Gym Access</p>
+            </div>
+
+            <div class="card">
+                <h3>Quarterly Plan</h3>
+                <p>₹4,000</p>
+                <p>Workout Plan</p>
+            </div>
+
+            <div class="card">
+                <h3>Annual Plan</h3>
+                <p>₹12,000</p>
+                <p>Full Gym Access</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Our Trainers</h2>
+        <div class="container">
+            <div class="card">
+                <img src="trainer.jpg" alt="Fitness trainer">
+                <h3>Strength Trainer</h3>
+                <p>Strength and muscle development</p>
+            </div>
+
+            <div class="card">
+                <img src="trainer2.jpg" alt="Fitness trainer">
+                <h3>Fitness Coach</h3>
+                <p>Fitness and conditioning</p>
+            </div>
+        </div>
+    </section>
+
+    <section>
+        <h2>Explore Our Fitness Center</h2>
+        <video width="500" controls>
+            <source src="gym-tour.mp4" type="video/mp4">
+        </video>
+    </section>
+
+    <section>
+        <h2>Contact Us</h2>
+        <p>Email: titansfitness@example.com</p>
+        <p>Phone: +91 98765 43210</p>
+        <p>Location: Jalandhar, Punjab</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Titan's Fitness Center. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
